@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title ng-bind="title"></title>
+    <link href="//cdn.bootcss.com/lumx/1.5.11/lumx.css" type="text/css" rel="stylesheet"/>
+    <link th:href="@{style/main.css}" type="text/css" rel="stylesheet"/>
+</head>
+<body ng-app="app" ng-controller="indexController">
+
+    <div ng-include="" src="'tpl/public/header.html'"></div>
+
+
+    <div ng-view=""></div>
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/velocity/1.5.0/velocity.min.js"></script>
+    <script src="//cdn.bootcss.com/moment.js/2.18.1/moment.min.js"></script>
+    <script src="//cdn.bootcss.com/angular.js/1.5.8/angular.min.js"></script>
+    <script src="//cdn.bootcss.com/angular.js/1.5.8/angular-route.min.js"></script>
+    <script src="//cdn.bootcss.com/lumx/1.5.11/lumx.min.js"></script>
+
+    <script th:src="@{javascript/app.js}"></script>
+    <script th:src="@{javascript/route.js}"></script>
+    <script th:src="@{javascript/filter.js}"></script>
+    <script th:src="@{javascript/service/public.js}"></script>
+    <script th:src="@{javascript/controller/index.js}"></script>
+</body>
+</html>
