@@ -16,9 +16,9 @@ app.config(
   ])
   .config(['$translateProvider', function($translateProvider){
     $translateProvider.useStaticFilesLoader({
-      prefix: 'l10n/',
+      prefix: 'i18n/',
       suffix: '.js'
     });
-    $translateProvider.preferredLanguage('en');
+    $translateProvider.preferredLanguage('zh_cn');
     $translateProvider.useLocalStorage();
   }]);
